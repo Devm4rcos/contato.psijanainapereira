@@ -195,14 +195,12 @@ Psicóloga Clínica e Terapeuta Cognitivo-Comportamental <!-- PODE EDITAR ESSA P
                     <label for="horario">Qual dia e horário você tem interesse em ser atendido(a)?</label>
                     <textarea id="horario" maxlength="180" placeholder="Ex: Terça-feira, 19:00 ou Sábados pela manhã"></textarea>
                 </div>
-            </form>
 
             <a href="#" id="whatsapp-link" class="whatsapp-button" onclick="generateLink()">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
                 Enviar Mensagem para Agendamento
             </a>
         </div>
-    </div>
 
     <script>
         function generateLink() {
