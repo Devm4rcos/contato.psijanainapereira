@@ -142,7 +142,7 @@ Psicóloga Clínica e Terapeuta Cognitivo-Comportamental <!-- PODE EDITAR ESSA P
 
  <div class="form-group" id="outro-field-container">
                 <label for="outro-text">Por favor, descreva como você encontrou meu perfil:</label>
-                <textarea id="outro-text" rows="4" placeholder="Ex: Vi sua matéria no jornal da cidade..."></textarea>
+                <textarea id="outro-text" rows="4" placeholder="Ex: Achei seu perfil fazendo pesquisa no Google..."></textarea>
             </div>
 
             <button type="submit">Enviar</button>
@@ -164,7 +164,7 @@ Psicóloga Clínica e Terapeuta Cognitivo-Comportamental <!-- PODE EDITAR ESSA P
             }
         }
     </script>
-</body> <!-- FINAL CODIGO FORMULARIO -->
+<!-- FINAL CODIGO FORMULARIO -->
                 <div class="form-group">
                     <label for="nome">Qual seu nome?</label>
                     <input type="text" id="nome" required>
