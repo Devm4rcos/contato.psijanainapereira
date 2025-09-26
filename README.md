@@ -110,7 +110,7 @@
 <body>
     <div class="container">
         <div class="profile-header">
-            <h1>Janaína Pereira</h1>
+            <h1>Janaína Pereira de Jesus</h1>
             <p>Psicóloga Clínica e Terapeuta Cognitivo-Comportamental</p>
         </div>
 
@@ -129,6 +129,38 @@
                         <option value="Outro">Outro</option>
                     </select>
                 </div>
+
+
+<div class="form-group" id="outro-field-container"> <!-- COD 134 AO NUMERAL 158 -->
+                <label for="outro-text">Por favor, descreva como você encontrou meu perfil:</label>
+                <textarea id="outro-text" rows="4" placeholder="Ex: Achei seu perfil fazendo pesquisa no Google..."></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleOutroField() {
+            const selectElement = document.getElementById('encontrou');
+            const outroFieldContainer = document.getElementById('outro-field-container');
+
+            // Verifica se a opção "Outro" foi selecionada
+            if (selectElement.value === 'Outro') {
+                // Se for "Outro", exibe a caixa de texto
+                outroFieldContainer.style.display = 'block';
+            } else {
+                // Se não for "Outro", esconde a caixa de texto
+                outroFieldContainer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+
+
+
+                
 
                 <div class="form-group">
                     <label for="nome">Qual seu nome?</label>
