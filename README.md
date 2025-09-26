@@ -124,19 +124,23 @@ Psicóloga Clínica e Terapeuta Cognitivo-Comportamental <!-- PODE EDITAR ESSA P
      
         <h1></h1> <!--TITULO AQUI, CAIXA FORMULARIO -->
 
-        <form>
-            <div class="form-group">
-                <label for="encontrou">Como você me conheceu?</label>
-                <select id="encontrou" onchange="toggleOutroField()">
-                    <option value="Instagram">Instagram</option>
-                    <option value="Facebook">Facebook</option>
-                    <option value="Amigo">Indicação de um amigo</option>
-                    <option value="BuscaOnline">Busca online (Google, etc.)</option>
-                    <option value="Outro">Outro</option>
-                </select>
-            </div>
+       <div class="form-section">
+            <p style="text-align: center; font-size: 1.1em; font-weight: 600;">Para agendar uma sessão, preencha o formulário abaixo:</p>
 
-            <div class="form-group" id="outro-field-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="encontrou">Como encontrou meu perfil?</label>
+                    <select id="encontrou" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Amigo">Indicação de amigo(a)</option>
+                        <option value="BuscaOnline">Busca online (Google, etc.)</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+
+ <div class="form-group" id="outro-field-container">
                 <label for="outro-text">Por favor, descreva como você encontrou meu perfil:</label>
                 <textarea id="outro-text" rows="4" placeholder="Ex: Vi sua matéria no jornal da cidade..."></textarea>
             </div>
@@ -160,8 +164,7 @@ Psicóloga Clínica e Terapeuta Cognitivo-Comportamental <!-- PODE EDITAR ESSA P
             }
         }
     </script>
-</body>
-</html> <!-- FINAL CODIGO FORMULARIO -->
+</body> <!-- FINAL CODIGO FORMULARIO -->
                 <div class="form-group">
                     <label for="nome">Qual seu nome?</label>
                     <input type="text" id="nome" required>
