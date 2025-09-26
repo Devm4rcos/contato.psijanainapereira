@@ -120,93 +120,9 @@ Psicóloga Clínica e Terapeuta Cognitivo-Comportamental <!-- PODE EDITAR ESSA P
             <p>Psicóloga Clínica e Terapeuta Cognitivo-Comportamental</p> <!--TENTAR ANEXAR LOGO MARCA AQUI -->
         </div>
 
-        <!DOCTYPE html> <!-- INICIO COFIGO FORMULARIO-->
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário Personalizado</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f0f4f8;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 500px;
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-            color: #007bff;
-            font-weight: 700;
-            margin-bottom: 25px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: #495057;
-        }
-
-        .form-group input, .form-group select, .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ced4da;
-            border-radius: 8px;
-            box-sizing: border-box;
-            font-size: 1em;
-            transition: border-color 0.3s ease;
-        }
-
-        .form-group textarea {
-            resize: vertical; /* Permite redimensionar apenas verticalmente */
-        }
-        
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.1em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #218838;
-        }
-
-        /* Oculta a caixa de "Outro" por padrão */
-        #outro-field-container {
-            display: none; 
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1></h1> <!--TITULO AQUI -->
+     
+        <h1></h1> <!--TITULO AQUI, CAIXA FORMULARIO -->
 
         <form>
             <div class="form-group">
