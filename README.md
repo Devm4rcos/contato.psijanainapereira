@@ -113,18 +113,11 @@ Psicóloga Clínica e Terapeuta Cognitivo-Comportamental <!-- PODE EDITAR ESSA P
 <body>
     <div class="container">
         <div class="profile-header">
-            <h1>Janaína Pereira de Jesus</h1> <!-- NOME PRINCIPAL AQUI -->
-
-
-            
-            <p>Psicóloga Clínica e Terapeuta Cognitivo-Comportamental</p> <!--TENTAR ANEXAR LOGO MARCA AQUI -->
+            <h1>Janaína Pereira</h1>
+            <p>Psicóloga Clínica e Terapeuta Cognitivo-Comportamental</p>
         </div>
 
-
-     
-        <h1></h1> <!--TITULO AQUI, CAIXA FORMULARIO -->
-
-       <div class="form-section">
+        <div class="form-section">
             <p style="text-align: center; font-size: 1.1em; font-weight: 600;">Para agendar uma sessão, preencha o formulário abaixo:</p>
 
             <form id="contact-form">
@@ -140,9 +133,12 @@ Psicóloga Clínica e Terapeuta Cognitivo-Comportamental <!-- PODE EDITAR ESSA P
                     </select>
                 </div>
 
- <div class="form-group" id="outro-field-container">
+                <!-- COMANDO PARA ESCONDER O MENU -->
+
+                
+<div class="form-group" id="outro-field-container">
                 <label for="outro-text">Por favor, descreva como você encontrou meu perfil:</label>
-                <textarea id="outro-text" rows="4" placeholder="Ex: Achei seu perfil fazendo pesquisa no Google..."></textarea>
+                <textarea id="outro-text" rows="4" placeholder="Ex: Vi sua matéria no jornal da cidade..."></textarea>
             </div>
 
             <button type="submit">Enviar</button>
@@ -163,8 +159,13 @@ Psicóloga Clínica e Terapeuta Cognitivo-Comportamental <!-- PODE EDITAR ESSA P
                 outroFieldContainer.style.display = 'none';
             }
         }
-    </script>
-<!-- FINAL CODIGO FORMULARIO -->
+    </script> <!-- FINAL DO COMANDO -->
+
+
+
+
+                
+
                 <div class="form-group">
                     <label for="nome">Qual seu nome?</label>
                     <input type="text" id="nome" required>
@@ -195,12 +196,14 @@ Psicóloga Clínica e Terapeuta Cognitivo-Comportamental <!-- PODE EDITAR ESSA P
                     <label for="horario">Qual dia e horário você tem interesse em ser atendido(a)?</label>
                     <textarea id="horario" maxlength="180" placeholder="Ex: Terça-feira, 19:00 ou Sábados pela manhã"></textarea>
                 </div>
+            </form>
 
             <a href="#" id="whatsapp-link" class="whatsapp-button" onclick="generateLink()">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
                 Enviar Mensagem para Agendamento
             </a>
         </div>
+    </div>
 
     <script>
         function generateLink() {
