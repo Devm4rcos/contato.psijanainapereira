@@ -120,22 +120,132 @@ Psicóloga Clínica e Terapeuta Cognitivo-Comportamental <!-- PODE EDITAR ESSA P
             <p>Psicóloga Clínica e Terapeuta Cognitivo-Comportamental</p> <!--TENTAR ANEXAR LOGO MARCA AQUI -->
         </div>
 
-        <div class="form-section">
-            <p style="text-align: center; font-size: 1.1em; font-weight: 600;">Para agendar uma sessão, preencha o formulário abaixo:</p>
+        <!DOCTYPE html> <!-- INICIO COFIGO FORMULARIO-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Personalizado</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="encontrou">Como encontrou meu perfil?</label>
-                    <select id="encontrou" required>
-                        <option value="">Selecione uma opção</option>
-                        <option value="Instagram">Instagram</option>
-                        <option value="Facebook">Facebook</option>
-                        <option value="Amigo">Indicação de amigo(a)</option>
-                        <option value="BuscaOnline">Busca online (Google, etc.)</option>
-                        <option value="Outro">Outro</option>
-                    </select>
-                </div>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #495057;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group textarea {
+            resize: vertical; /* Permite redimensionar apenas verticalmente */
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Oculta a caixa de "Outro" por padrão */
+        #outro-field-container {
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Como Você Encontrou meu Perfil?</h1>
+
+        <form>
+            <div class="form-group">
+                <label for="encontrou">Como você me conheceu?</label>
+                <select id="encontrou" onchange="toggleOutroField()">
+                    <option value="Instagram">Instagram</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Amigo">Indicação de um amigo</option>
+                    <option value="BuscaOnline">Busca online (Google, etc.)</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="outro-field-container">
+                <label for="outro-text">Por favor, descreva como você encontrou meu perfil:</label>
+                <textarea id="outro-text" rows="4" placeholder="Ex: Vi sua matéria no jornal da cidade..."></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleOutroField() {
+            const selectElement = document.getElementById('encontrou');
+            const outroFieldContainer = document.getElementById('outro-field-container');
+
+            // Verifica se a opção "Outro" foi selecionada
+            if (selectElement.value === 'Outro') {
+                // Se for "Outro", exibe a caixa de texto
+                outroFieldContainer.style.display = 'block';
+            } else {
+                // Se não for "Outro", esconde a caixa de texto
+                outroFieldContainer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html> <!-- FINAL CODIGO FORMULARIO -->
                 <div class="form-group">
                     <label for="nome">Qual seu nome?</label>
                     <input type="text" id="nome" required>
