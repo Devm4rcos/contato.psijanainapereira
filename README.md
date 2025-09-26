@@ -1,5 +1,5 @@
-# Janaína Pereira de Jesus
-Psicóloga Clínica e Terapeuta Cognitivo-Comportamental
+# Janaína Pereira de Jesus <!-- NOME EM NEGRITO AQUI -->
+Psicóloga Clínica e Terapeuta Cognitivo-Comportamental <!-- PODE EDITAR ESSA PARTE TAMBÉM -->
 
 
 <html lang="pt-br">
@@ -113,8 +113,8 @@ Psicóloga Clínica e Terapeuta Cognitivo-Comportamental
 <body>
     <div class="container">
         <div class="profile-header">
-            <h1>Janaína Pereira de Jesus</h1>
-            <p>Psicóloga Clínica e Terapeuta Cognitivo-Comportamental</p>
+            <h1>Janaína Pereira de Jesus</h1> <!-- NOME PRINCIPAL AQUI -->
+            <p>Psicóloga Clínica e Terapeuta Cognitivo-Comportamental</p> <!--TENTAR ANEXAR LOGO MARCA AQUI -->
         </div>
 
         <div class="form-section">
