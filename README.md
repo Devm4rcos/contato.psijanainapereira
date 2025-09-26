@@ -114,6 +114,136 @@ Psicóloga Clínica e Terapeuta Cognitivo-Comportamental <!-- PODE EDITAR ESSA P
     <div class="container">
         <div class="profile-header">
             <h1>Janaína Pereira de Jesus</h1> <!-- NOME PRINCIPAL AQUI -->
+
+            <!DOCTYPE html> <!-- INICIO DO CODIGO DO SIMBOLO -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Símbolo Psicologia Brilhante</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8; /* Fundo suave */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden; /* Para garantir que o brilho não cause scroll */
+        }
+
+        .symbol-container {
+            position: relative;
+            width: 300px; /* Tamanho do contêiner */
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .psychology-symbol {
+            font-size: 150px; /* Tamanho do símbolo */
+            font-weight: 700;
+            color: #007bff; /* Cor base do símbolo: Azul claro */
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.6), 
+                         0 0 20px rgba(0, 123, 255, 0.4), 
+                         0 0 30px rgba(0, 123, 255, 0.2);
+            transition: text-shadow 0.3s ease-in-out;
+            cursor: pointer; /* Indica que é interativo */
+            animation: glow-animation 2s infinite alternate; /* Animação de brilho */
+        }
+
+        @keyframes glow-animation {
+            from {
+                text-shadow: 0 0 5px #007bff,
+                             0 0 10px #007bff,
+                             0 0 15px #007bff,
+                             0 0 20px #007bff;
+            }
+            to {
+                text-shadow: 0 0 10px #007bff,
+                             0 0 20px #007bff,
+                             0 0 30px #007bff,
+                             0 0 40px #007bff,
+                             0 0 50px #007bff;
+            }
+        }
+
+        .psychology-symbol:hover {
+            text-shadow: 0 0 15px #007bff, 
+                         0 0 30px #007bff, 
+                         0 0 45px #007bff,
+                         0 0 60px #007bff; /* Efeito mais intenso ao passar o mouse */
+        }
+
+        .text-around {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* Ajuste para alinhar o texto ao redor */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            pointer-events: none; /* Permite clicar no símbolo através do texto */
+        }
+
+        .text-around span {
+            position: absolute;
+            color: #6c757d; /* Cor do texto */
+            font-size: 1.2em;
+            font-weight: 500;
+            white-space: nowrap; /* Impede que o texto quebre */
+            transform-origin: 0 150px; /* Ponto central da rotação (metade da largura/altura do container) */
+            /* Ajuste fino para posicionamento */
+        }
+    </style>
+</head>
+<body>
+    <div class="symbol-container">
+        <div id="psi-symbol" class="psychology-symbol">
+            &#936; </div>
+        <div class="text-around">
+            <span id="text-span">Psicóloga Janaína Pereira de Jesus</span>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const textSpan = document.getElementById('text-span');
+            const text = textSpan.textContent;
+            textSpan.textContent = ''; // Limpa o texto original
+
+            const radius = 120; // Raio para posicionar as letras (ajuste conforme o tamanho do seu símbolo)
+            const angleIncrement = (360 / text.length); // Ângulo para cada letra
+
+            // Adiciona cada letra individualmente para girá-las
+            for (let i = 0; i < text.length; i++) {
+                const charSpan = document.createElement('span');
+                charSpan.textContent = text[i];
+                charSpan.style.position = 'absolute';
+                charSpan.style.transformOrigin = '0 120px'; // Ajuste o '120px' para o raio do círculo
+                charSpan.style.transform = `rotate(${i * angleIncrement - 90}deg) translate(${radius}px) rotate(90deg)`;
+                
+                // Ajuste fino para espaçamento entre as letras se necessário
+                // charSpan.style.left = `${(i * 10)}px`; 
+
+                textSpan.appendChild(charSpan);
+            }
+        });
+
+        // Opcional: Adicionar um efeito de brilho mais dinâmico com JavaScript
+        // (neste caso, o CSS já faz um bom trabalho com a animação de glow)
+        // Se quisesse um brilho diferente ao clicar, poderia adicionar aqui.
+    </script>
+</body>
+</html> <!--FINAL DO CODIGO DO SIMBOLO -->
+
+
+            
             <p>Psicóloga Clínica e Terapeuta Cognitivo-Comportamental</p> <!--TENTAR ANEXAR LOGO MARCA AQUI -->
         </div>
 
