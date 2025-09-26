@@ -194,7 +194,7 @@
 
             <a href="#" id="whatsapp-link" class="whatsapp-button" onclick="generateLink()">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
-                Enviar Mensagem para Agendamento <!-- PODE SER EDITADO -->
+                Clique para realizar o seu agendamento <!-- PODE SER EDITADO -->
             </a>
     </div>
 
