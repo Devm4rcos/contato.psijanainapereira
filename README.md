@@ -113,7 +113,7 @@ Psicóloga Clínica e Terapeuta Cognitivo-Comportamental
 <body>
     <div class="container">
         <div class="profile-header">
-            <h1>Janaína Pereira</h1>
+            <h1>Janaína Pereira de Jesus</h1>
             <p>Psicóloga Clínica e Terapeuta Cognitivo-Comportamental</p>
         </div>
 
